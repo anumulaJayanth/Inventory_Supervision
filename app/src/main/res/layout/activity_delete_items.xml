@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deleteItems"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="217dp"
+        android:layout_height="156dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="20dp"
+        android:text="Delete Items"
+        android:textColor="#C1AE1515"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/NameDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="20dp"
+        android:text="Name of Item :"
+        android:textColor="#C1131313"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/productNameToDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#0E0E0E"
+        android:textColorHint="#101010" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productNameToDelete"
+        android:layout_marginTop="20dp"
+        android:text="Item to Delete:"
+        android:textColor="#C1131313"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/displaycode"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productNameToDelete"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#201E1E"
+        android:textColorHighlight="#2B2929"
+        android:textColorHint="#120E0E"
+        android:textColorLink="#1C1A1A"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonscandelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Scan BarCode"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/deleteItemToTheDatabasebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonscandelete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Delete Item" />
+
+</RelativeLayout>
